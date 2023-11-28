@@ -1,0 +1,19 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+.clip-box {
+   clip-path: polygon(20% 0, 100% 0, 100% 70%, 80% 100%, 0 100%, 0 30%);
+}
+
+body {
+   background-color: aqua;
+}
+
+/* navbar */
+.logo {
+   width: 150px;
+}
