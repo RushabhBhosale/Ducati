@@ -2,54 +2,442 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://kit.fontawesome.com/0926a5a74f.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://kit.fontawesome.com/0926a5a74f.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-   
 
-   <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid mx-5">
-        <a class="navbar-brand" href="#">
-         <img class="logo" src="./assets/images/logo.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-               <div class="flag">
-                  <img class="img-fluid" src="./assets/images/flag.png" alt="">
-               </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
+  <!-- Navbar -->
+  <nav class="navbar px-lg-5 position-absolute top-0 w-100 navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand mt-2" href="#">
+        <img class="logo" src="./assets/images/logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <div class="d-flex india overflow-hidden">
+            <img class="img-fluid flag" src="./assets/images/flag.png" alt="">
+            <i class="fa-solid down mx-3 mt-2 text-white fa-chevron-down"></i>
+          </div>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mt-3 ms-auto">
+          <li class="nav-item me-4">
+            <div class="d-flex india">
+              <img class="img-fluid flag" src="./assets/images/flag.png" alt="">
+              <p class="bolder ms-2 text-white">HI <span>|</span></p>
+              <i class="fa-solid down ms-1 mt-2 text-white fa-chevron-down"></i>
+            </div>
+          </li>
+          <li class="nav-item">
+            <i class="fa-brands fs-5 mx-2 text-white fa-facebook-f"></i>
+          </li>
+          <li class="nav-item">
+            <i class="fa-brands fs-5 mx-2 text-white fa-instagram"></i>
+          </li>
+          <li class="nav-item">
+            <i class="fa-brands fs-5 mx-2 text-white fa-twitter"></i>
+          </li>
+          <li class="nav-item">
+            <i class="fa-brands fs-5 mx-2 text-white fa-youtube"></i>
+          </li>
+          <li class="nav-item">
+            <i class="fa-brands fs-5 mx-2 text-white fa-spotify"></i>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-plus plus text-white h1 ms-4 bolder"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExample" class="position-relative carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item hero-1 img-fluid active position-relative">
+        <div class="position-absolute bottom-0 w-100 carousel-text p-lg-5 pb-5">
+          <div class="px-3 px-lg-3">
+            <h1 class="display-4 text-white bolder lh">Next-Gen <br> Icon</h1>
+            <div class="line my-4"></div>
+            <p class="text-white car-desc">So fresh. So unmistakably Scrambler. The new Icon is <br> here for you</p>
+            <button class="yelow yellow-button">DISCOVER MORE <i class="fa-solid arrow fa-arrow-right"></i></button>
+          </div>
         </div>
       </div>
-    </nav>
+      <div class="carousel-item hero-2 img-fluid position-relative">
+        <div class="position-absolute bottom-0 w-100 carousel-text p-lg-5 pb-5">
+          <div class="px-3 px-lg-3">
+            <h1 class="display-4 text-white bolder lh">Next-Gen <br> Full Throttle</h1>
+            <div class="line my-4"></div>
+            <p class="text-white car-desc">The Fastest Look in the City <br>Here is the new Full Throttle</p>
+            <button class="yelow yellow-button">DISCOVER MORE <i class="fa-solid arrow fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item hero-3 img-fluid position-relative">
+        <div class="position-absolute bottom-0 w-100 carousel-text p-lg-5 pb-5">
+          <div class="px-3 px-lg-3">
+            <h1 class="display-4 text-white bolder lh">Next-Gen <br>Nighshift</h1>
+            <div class="line my-4"></div>
+            <p class="text-white car-desc">Next Gen Classy<br>Here is the new Nightshift</p>
+            <button class="yelow yellow-button">DISCOVER MORE <i class="fa-solid arrow fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Bikes -->
+  <div class="p-lg-5 pb-5">
+    <div class="px-3 px-lg-3">
+      <h1 class="display-4 bolder black lh">Meet the <br>Next Gen Family</h1>
+      <div class="line my-4"></div>
+      <p class="car-desc roboto">There’s a Scrambler for every attitude. Which one’s yours?</p>
+    </div>
+  </div>
+  <div class="container- ">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center">
+        <h4 class="bolder">Icon</h4>
+        <p>Future comes in colours</p>
+        <div class="overflow-hidden">
+          <img src="./assets/images/bike-1.png" class="img-fluid bike" alt="">
+        </div>
+        <button class="yelow yellow-button">DISCOVER MORE <i class="fa-solid arrow fa-arrow-right"></i></button>
+        <p class="text-yelow bolder fs-6 mt-2">CONFIGURE</p>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center">
+        <h4 class="bolder">Full Throttle</h4>
+        <p>The Fastest Look in the City</p>
+        <div class="overflow-hidden">
+          <img src="./assets/images/bike-2.png" class="img-fluid bike" alt="">
+        </div>
+        <button class="yelow yellow-button">DISCOVER MORE <i class="fa-solid arrow fa-arrow-right"></i></button>
+        <p class="text-yelow bolder fs-6 mt-2">CONFIGURE</p>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center">
+        <h4 class="bolder">Nighshift</h4>
+        <p>Next Gen Classy</p>
+        <div class="overflow-hidden">
+          <img src="./assets/images/bike-3.png" class="img-fluid bike" alt="">
+        </div>
+        <button class="yelow yellow-button">DISCOVER MORE <i class="fa-solid arrow fa-arrow-right"></i></button>
+        <p class="text-yelow bolder fs-6 mt-2">CONFIGURE</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stories -->
+  <div class="p-lg-5 pb-5 mt-4">
+    <div class="px-3 px-lg-3">
+      <h1 class="display-4 bolder black lh">Stories from the Land of <br class="d-none d-md-block">Joy</h1>
+      <div class="line my-4"></div>
+      <p class="car-desc tolum roboto">Latest facts and feelings from the Land of Joy. Ducati Scrambler is the essence
+        of
+        motorcycling and a world filled with freedom, joy and self-expression.</p>
+    </div>
+  </div>
+  <div class="d-flex container justify-content-end mb-3">
+    <div class="arrow-1 me-2"><i class="fa-solid fa-chevron-left"></i></div>
+    <div class="arrow-2"><i class="fa-solid fa-chevron-right"></i></div>
+  </div>
+  <div class="ms-5">
+    <div class="d-flex overflow-auto">
+      <div class="col-10 col-md-4 col-lg-3 me-3 clip-box">
+        <img class="clip-box box img-fluid" src="./assets/images/clip-1.jpg" alt="">
+        <div class="text-shadow">
+          <h4 class="bolder mt-4 mb-5">World Ducati Week is coming back</h4>
+          <p class="text-yelow bolder">READ MORE</p>
+        </div>
+      </div>
+      <div class="col-10 col-md-4 col-lg-3 me-3 clip-box">
+        <img class="clip-box box img-fluid" src="./assets/images/clip-2.jpg" alt="">
+        <div class="text-shadow">
+          <h4 class="bolder mt-4 mb-5">World Ducati Week is coming back</h4>
+          <p class="text-yelow bolder">READ MORE</p>
+        </div>
+      </div>
+      <div class="col-10 col-md-4 col-lg-3 me-3 clip-box">
+        <img class="clip-box box img-fluid" src="./assets/images/clip-3.jpg" alt="">
+        <div class="text-shadow">
+          <h4 class="bolder mt-4 mb-5">World Ducati Week is coming back</h4>
+          <p class="text-yelow bolder">READ MORE</p>
+        </div>
+      </div>
+      <div class="col-10 col-md-4 col-lg-3 me-3 clip-box">
+        <img class="clip-box box img-fluid" src="./assets/images/clip-4.jpg" alt="">
+        <div class="text-shadow">
+          <h4 class="bolder mt-4 mb-5">World Ducati Week is coming back</h4>
+          <p class="text-yelow bolder">READ MORE</p>
+        </div>
+      </div>
+      <div class="col-10 col-md-4 col-lg-3 me-3 clip-box">
+        <img class="clip-box box img-fluid" src="./assets/images/clip-5.jpg" alt="">
+        <div class="text-shadow">
+          <h4 class="bolder mt-4 mb-5">World Ducati Week is coming back</h4>
+          <p class="text-yelow bolder">READ MORE</p>
+        </div>
+      </div>
+      <div class="col-10 col-md-4 col-lg-3 me-3 clip-box">
+        <img class="clip-box box img-fluid" src="./assets/images/clip-6.jpg" alt="">
+        <div class="text-shadow">
+          <h4 class="bolder mt-4 mb-5">World Ducati Week is coming back</h4>
+          <p class="text-yelow bolder">READ MORE</p>
+        </div>
+      </div>
+      <div class="col-10 col-md-4 col-lg-3 me-3 clip-box">
+        <img class="clip-box box img-fluid" src="./assets/images/clip-7.jpg" alt="">
+        <div class="text-shadow">
+          <h4 class="bolder mt-4 mb-5">World Ducati Week is coming back</h4>
+          <p class="text-yelow bolder">READ MORE</p>
+        </div>
+      </div>
+    </div>
+    <button class="yelow yellow-button">SEE MORE <i class="fa-solid arrow fa-arrow-right"></i></button>
+  </div>
+
+  <!-- Ducati World -->
+  <div class="fgjj">
+    <div class="container-md d-flex flex-column-reverse flex-md-row justify-content-between">
+      <div class="col-12 col-md-6 booom mb-5">
+        <img class="img-fluid kom" src="./assets/images/big-1.jpg" alt="">
+      </div>
+      <div class="col-12 col-md-5  d-flex flex-column justify-content-center">
+        <h1 class="display-4 text-white bolder black lh">Ducati World Première 2024</h1>
+        <p class="pom my-4">The appointment with the Ducati World Première web series, for the launch of the 2024 range,
+          returns. A six-stage journey that will end on 7 November.</p>
+        <button class=" yellow-button dom">DISCOVER MORE <i class="fa-solid arrow fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Next Gen -->
+  <div class="gffCD">
+    <div class="container-md d-flex flex-column flex-md-row justify-content-between">
+      <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
+        <h1 class="display-4 bolder black lh">Next-Gen <br class="d-none d-md-block">Tour</h1>
+        <p class="pom my-4">The new Scrambler family is ready to take the stage around Europe.</p>
+        <button class="ms-0 yellow-button dom">DISCOVER MORE <i class="fa-solid arrow fa-arrow-right"></i></button>
+      </div>
+      <div class="col-12 col-md-6 shrooom mb-5">
+        <img class="img-fluid kom" src="./assets/images/big-2.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- Just Pros -->
+  <div class="p-lg-5 pb-5">
+    <div class="px-3 px-lg-3">
+      <h1 class="display-4 bolder black lh">JUST PROs</h1>
+      <div class="line my-4"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center">
+        <h4 class="bolder">1100 Dark Pro</h4>
+        <p class="roboto">Dark Suit</p>
+        <div class="overflow-hidden">
+          <img src="./assets/images/bike-4.jpg" class="img-fluid bike" alt="">
+        </div>
+        <button class="yelow yellow-button">DISCOVER MORE <i class="fa-solid arrow fa-arrow-right"></i></button>
+        <p class="text-yelow bolder fs-6 mt-2">CONFIGURE</p>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center">
+        <h4 class="bolder">1100 Tribute Pro</h4>
+        <p class="roboto">Mark Your Roots</p>
+        <div class="overflow-hidden">
+          <img src="./assets/images/bike-5.jpg" class="img-fluid bike" alt="">
+        </div>
+        <button class="yelow yellow-button">DISCOVER MORE <i class="fa-solid arrow fa-arrow-right"></i></button>
+        <p class="text-yelow bolder fs-6 mt-2">CONFIGURE</p>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center">
+        <h4 class="bolder">1100 Sport Pro</h4>
+        <p class="roboto">Sporty attitude</p>
+        <div class="overflow-hidden">
+          <img src="./assets/images/bike-6.jpg" class="img-fluid bike" alt="">
+        </div>
+        <button class="yelow yellow-button">DISCOVER MORE <i class="fa-solid arrow fa-arrow-right"></i></button>
+        <p class="text-yelow bolder fs-6 mt-2">CONFIGURE</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Next gen Sounds -->
+  <div class="fgjj">
+    <div class="container-md d-flex flex-column-reverse flex-md-row  justify-content-between">
+      <div class="col-12 col-md-6 booom mb-5">
+        <img class="img-fluid kom" src="./assets/images/big-3.png" alt="">
+      </div>
+      <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
+        <h1 class="display-4 text-white bolder black lh">Next-Gen <br> Sounds</h1>
+        <p class="pom dfghi my-4">Listen to the Next-Gen playlist on Spotify</p>
+        <button class=" yellow-button dom">MORE INFO<i class="fa-solid arrow fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- The land of joy -->
+  <div class="p-lg-5 pb-5">
+    <div class="px-3 px-lg-3">
+      <h1 class="display-4 bolder black lh">The Land of Joy</h1>
+      <div class="line my-4"></div>
+      <p class="car-desc roboto">A universe made of music, food, lifestyle. <br>
+        And an endless amount of fun.</p>
+    </div>
+  </div>
+  <div class="clip-box-2 container img-fluid sdghasdtcf">
+    <div class="h-100 kibi">
+      <div class="px-3 px-lg-3">
+        <h1 class="display-4 text-white bolder lh">Next-Gen <br> Icon</h1>
+        <p class="text-white car-desc">So fresh. So unmistakably Scrambler. The new Icon is <br> here for you</p>
+        <button class="yelow yellow-button">DISCOVER MORE <i class="fa-solid arrow fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="d-md-flex karpos">
+      <div class="clip-box-3 col-12 col-md-6 img-fluid sdghasdtcf ghuli">
+        <div class="h-100 mibi d-flex flex-column justify-content-center">
+          <div class="px-3 px-lg-3">
+            <h1 class="display-4 text-white bolder lh">Next-Gen <br> Icon</h1>
+            <p class="text-white car-desc">So fresh. So unmistakably Scrambler. The new Icon is <br> here for you</p>
+            <button class="yelow yellow-button">DISCOVER MORE <i class="fa-solid arrow fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="clip-box-3 col-12 col-md-6 img-fluid sdghasdtcf hhuli">
+        <div class="h-100 mibi d-flex flex-column justify-content-center">
+          <div class="px-3 px-lg-3">
+            <h1 class="display-4 text-white bolder lh">Next-Gen <br> Icon</h1>
+            <p class="text-white car-desc">So fresh. So unmistakably Scrambler. The new Icon is <br> here for you</p>
+            <button class="yelow yellow-button">DISCOVER MORE <i class="fa-solid arrow fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wall OF Joy -->
+  <div class="p-lg-5 pb-5">
+    <div class="px-3 px-lg-3">
+      <h1 class="display-4 bolder black lh">Wall of Joy</h1>
+      <div class="line my-4"></div> 
+      <p class="car-desc roboto">Words and pics shared from all over the Land of Joy. </p>
+    </div>
+  </div> 
+  <div class="container">
+    <div class="paka">
+      <div class="p-0 image-1 img-1">
+        <div class="w-100 d-flex cgan align-items-center justify-content-center h-100">
+          <i class="fa-solid bango fa-expand fs-2 text-yelow"></i>
+        </div>
+      </div>
+      <div class="p-0 image-1 img-2">
+        <div class="w-100 d-flex cgan align-items-center justify-content-center h-100">
+          <i class="fa-solid bango fa-expand fs-2 text-yelow"></i>
+        </div>
+      </div>
+      <div class="p-0 image-1 img-3">
+        <div class="w-100 d-flex cgan align-items-center justify-content-center h-100">
+          <i class="fa-solid bango fa-expand fs-2 text-yelow"></i>
+        </div>
+      </div>
+      <div class="p-0 image-1 img-4">
+        <div class="w-100 d-flex cgan align-items-center justify-content-center h-100">
+          <i class="fa-solid bango fa-expand fs-2 text-yelow"></i>
+        </div>
+      </div>
+      <div class="p-0 image-1 img-5">
+        <div class="w-100 d-flex cgan align-items-center justify-content-center h-100">
+          <i class="fa-solid bango fa-expand fs-2 text-yelow"></i>
+        </div>
+      </div>
+      <div class="p-0 image-1 img-6">
+        <div class="w-100 d-flex cgan align-items-center justify-content-center h-100">
+          <i class="fa-solid bango fa-expand fs-2 text-yelow"></i>
+        </div>
+      </div>
+      <div class="p-0 image-1 img-7">
+        <div class="w-100 d-flex cgan align-items-center justify-content-center h-100">
+          <i class="fa-solid bango fa-expand fs-2 text-yelow"></i>
+        </div>
+      </div>
+      <div class="p-0 image-1 img-8">
+        <div class="w-100 d-flex cgan align-items-center justify-content-center h-100">
+          <i class="fa-solid bango fa-expand fs-2 text-yelow"></i>
+        </div>
+      </div>
+      <div class="p-0 image-1 img-9">
+        <div class="w-100 d-flex cgan align-items-center justify-content-center h-100">
+          <i class="fa-solid bango fa-expand fs-2 text-yelow"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter -->
+  <div class="clip-box-2 container d-lg-flex vbv my-5">
+    <div class="col-12 col-lg-6">
+      <h3 class="bolder text-white">Subscribe to newsletter</h3>
+      <p class="car-desc text-white roboto my-4">By entering your email address you will always be up to date with the latest Scrambler Ducati news and promotions.</p>
+      <p class="bura roboto text-white">I declare that I have read the <span>privacy policy</span> drafted pursuant to art. 13 of EU Regulation 2016/679 on the protection of personal data ("Regulation") and I authorize the processing of my email address for the purposes specified therein.</p>
+    </div>
+    <div class="col-12 col-lg-6 px-4">
+      <input type="email" style="width: 100%; height: 60px;" placeholder="      Your Email Address*">
+      <button class="yelow yellow-button bolder h1 ms-0 mt-3">SUBSCRIBE <i class="fa-solid arrow fa-arrow-right"></i></button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="d-flex footer flex-column align-items-center justify-content-center">
+    <img src="./assets/images/logo-yellow.svg" alt="">
+    <div class="row w-50 chuma text-center">
+      <div class="col-4">Terms of use</div>
+      <div class="col-4">Cookie Policy</div>
+      <div class="col-4">Privacy Policy</div>
+    </div>
+    <div class="chuma w-75 px-5 text-center">
+      <p>Copyright © 2023 Ducati Motor Holding S.p.A. – A Sole Shareholder Company – A Company subject to the Management and Coordination activities of AUDI AG. All rights reserved. VAT 05113870967</p>
+    </div>
+    <div class="d-flex">
+      <i class="fa-solid icon fa-bullseye"></i>
+      <i class="fa-brands icon fa-facebook-f"></i>
+      <i class="fa-brands icon fa-instagram"></i>
+      <i class="fa-brands icon fa-twitter"></i>
+      <i class="fa-brands icon fa-youtube"></i>
+      <i class="fa-brands icon fa-spotify"></i>
+    </div>
+  </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
