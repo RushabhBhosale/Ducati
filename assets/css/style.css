@@ -5,6 +5,7 @@
 }
 
 
+
 .clip-box {
    clip-path: polygon(0 15%, 17% 0, 100% 0, 100% 73%, 82% 100%, 0 100%);
    object-fit: cover;
